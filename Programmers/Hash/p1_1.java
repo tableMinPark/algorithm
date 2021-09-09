@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class p1{
+public class p1_1{
     public static String solution_1(String[] participant, String[] completion) {
         String answer = "";
 
