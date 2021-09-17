@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public class p3_1 {
     public static int solution(int[][] jobs){
         int answer = 0;
