@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class p3_3{
+public class p3_1{
     static int[] parent;
     public static int solution(int n, int[][] costs){
         int answer = 0;
@@ -27,7 +27,7 @@ public class p3_3{
 
     public static int find(int x){
         if (parent[x] == x) return x;
-        else return find(parent[x]);
+        else return parent[parent[x]] = find(parent[x]);
     }
 
     public static void main(String[] args) {
