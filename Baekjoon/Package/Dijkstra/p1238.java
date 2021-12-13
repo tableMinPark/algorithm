@@ -1,57 +1,56 @@
-//틀렸습니다 - 다익스트라의 개념을 좀 더 숙지후 도전
-
 import java.io.*;
 import java.util.*;
 
 public class p1238{
     public static class Node implements Comparable<Node>{
         int n;
-        int v;
-        public Node(int n, int v){
+        int w;
+        public Node(int n, int w){
             this.n = n;
-            this.v = v;
+            this.w = w;
         }
         @Override
         public int compareTo(Node n){
-            return this.v - n.v;
+            return this.w - n.w;
         }
     }
+
+    static int N;
+    static int M;
+    static int X;
+
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
-        int X = Integer.parseInt(st.nextToken());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        X = Integer.parseInt(st.nextToken());
 
-        List<Node>[] graph = new ArrayList[N + 1];;
-        List<Node>[] reverseGraph = new ArrayList[N + 1];
-        int[] values = new int[N + 1];
-        int[] reverseValues = new int[N + 1];
+        List<Node>[] graph = new ArrayList[N + 1];
+        List<Node>[] rGraph = new ArrayList[N + 1];
 
         for (int i = 1; i <= N; i++) {
             graph[i] = new ArrayList<>();
-            reverseGraph[i] = new ArrayList<>();
+            rGraph[i] = new ArrayList<>();
         }
 
         for (int i = 0; i < M; i++){
             st = new StringTokenizer(br.readLine());
-            int n1 = Integer.parseInt(st.nextToken());
-            int n2 = Integer.parseInt(st.nextToken());
-            int value = Integer.parseInt(st.nextToken());
-            graph[n1].add(new Node(n2, value));
-            reverseGraph[n2].add(new Node(n1, value));
+            int A = Integer.parseInt(st.nextToken());
+            int B = Integer.parseInt(st.nextToken());
+            int T = Integer.parseInt(st.nextToken());
+            graph[A].add(new Node(B, T));
+            rGraph[B].add(new Node(A, T));
         }
-        
         int answer = 0;
 
-        dijkstra(graph, values, X, N);
-        dijkstra(reverseGraph, reverseValues, X, N);
+        int[] xToN = dijkstra(graph);
+        int[] nToX = dijkstra(rGraph);
 
         for (int i = 1; i <= N; i++){
-            int sum = values[i] + reverseValues[i];
-            if (answer < sum) answer = sum;
+            if (answer < xToN[i] + nToX[i]) answer = xToN[i] + nToX[i];
         }
         
         bw.write(String.valueOf(answer));
@@ -59,22 +58,29 @@ public class p1238{
         bw.flush();
         bw.close();
     }
-    public static void dijkstra(List<Node>[] graph, int[] values, int X, int N){
+    public static int[] dijkstra(List<Node>[] graph){
+        int[] value = new int[N + 1];
+        for (int i = 1; i <= N; i++) value[i] = Integer.MAX_VALUE;
+
         PriorityQueue<Node> q = new PriorityQueue<>();
         q.add(new Node(X, 0));
-        
-        for (int i = 1; i <= N; i++) values[i] = Integer.MAX_VALUE;
+        value[X] = 0;
 
         while(!q.isEmpty()){
             Node now = q.poll();
+            int nowN = now.n;
+            int nowW = now.w;
 
-            for (int i = 0; i < graph[now.n].size(); i++){
-                Node next = graph[now.n].get(i);
-                if (values[next.n] > next.v + now.v){
-                    values[next.n] = next.v + now.v;
-                    q.add(new Node(next.n, next.v + now.v));
+            for (Node next : graph[nowN]){
+                int nextN = next.n;
+                int nextW = next.w + nowW;
+
+                if (value[nextN] > nextW){
+                    value[nextN] = nextW;
+                    q.add(new Node(nextN, nextW));
                 }
             }
         }
+        return value;
     }
 }
