@@ -7,9 +7,17 @@ public class p16947 {
     static boolean[] v;
     static boolean isCycle = false;
     static Set<Integer> cycle = new HashSet<>();
-    static int answer;
     static StringBuilder sb = new StringBuilder();
 
+    public static class Node{
+        int n;
+        int d;
+
+        public Node(int n, int d){
+            this.n = n;
+            this.d = d;
+        }
+    }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -30,20 +38,15 @@ public class p16947 {
 
         for (int i = 1; i <= N; i++){
             v = new boolean[N + 1];
-            DFS(i, i, 0);
+            DFS(i, i, 1);
             if (isCycle) break;
         }
 
         for (int i = 1; i <= N; i++){
-            if (cycle.contains(i)) {
-                sb.append(i).append(" ");
-                continue;
-            }
-            v = new boolean[N + 1];
-            answer = 0;
-            DFS(i, );
+            sb.append(BFS(i)).append(" ");
         }
 
+        bw.write(sb.toString());
         bw.flush();
         br.close();
         bw.close();
@@ -54,7 +57,7 @@ public class p16947 {
 
         for (int next : graph[now]){   
             if (v[next]) {
-                if (next == start && depth > 3){
+                if (next == start && depth > 2){
                     isCycle = true;
                     for (int j = 1; j <= N; j++){
                         if (v[j]) cycle.add(j);
@@ -69,8 +72,26 @@ public class p16947 {
         v[now] = false;
     }
 
-    public static void BFS(int now, int dest, int depth){
+    public static int BFS(int start){
         // 순환선 까지의 거리 찾기
+        Queue<Node> q = new LinkedList<>();
+        v = new boolean[N + 1];
+
+        q.add(new Node(start, 0));
+        v[start] = true;
+        
+        while(!q.isEmpty()){
+            Node now = q.poll();
+
+            if (cycle.contains(now.n)) return now.d;
+
+            for (int next : graph[now.n]){
+                if (v[next]) continue;
+                q.add(new Node(next, now.d + 1));
+                v[next] = true;
+            }
+        }
+        return -1;
     }
 }
 
