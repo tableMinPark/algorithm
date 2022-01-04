@@ -41,7 +41,6 @@ public class p16929 {
 
     public static void DFS(int y, int x, int sy, int sx, int color, int depth){
         v[y][x] = true;
-        System.out.println(y + " " + x + " " + depth);
         for (int i = 0; i < 4; i++){
             int nextY = y + py[i];
             int nextX = x + px[i];
