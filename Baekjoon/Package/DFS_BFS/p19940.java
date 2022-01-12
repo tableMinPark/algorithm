@@ -1,70 +1,67 @@
 import java.io.*;
 import java.util.*;
 
-import javax.swing.text.html.parser.DTD;
-
 public class p19940 {
-    public static class Node{
-        int t;
-        int Dh;
-        int Dt;
-        int Nt;
-        int Do;
-        int No;
-        public Node(int t, int Dh, int Dt, int Nt, int Do, int No){
-            this.t = t;
-            this.Dh = Dh;
-            this.Dt = Dt;
-            this.Nt = Nt;
-            this.Do = Do;
-            this.No = No;
-        }
-    }
+    static int[] pn = {60, 10, -10, 1, -1};
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+        int[][] dp = new int[61][5];
+        Queue<Integer> q = new LinkedList<>();
+
+        for (int i = 1; i <= 60; i++) Arrays.fill(dp[i], 9);
+        q.add(0);
+
+        while(!q.isEmpty()){
+            int now = q.poll();
+
+            for (int i = 0; i < 5; i++){
+                int next = now + pn[i];
+                if (next < 0 || next > 60) continue;
+
+                int[] temp = {dp[now][0], dp[now][1], dp[now][2], dp[now][3], dp[now][4]};
+                temp[i]++;
+
+                if (cmp(dp[next], temp)){
+                    for (int j = 0; j < 5; j++) dp[next][j] = temp[j];
+                    q.add(next);
+                }
+            }
+        }
+        
         int T = Integer.parseInt(br.readLine());
+        
+        StringBuilder sb = new StringBuilder();
 
         for (int testCase = 0; testCase < T; testCase++){
             int N = Integer.parseInt(br.readLine());
 
-            Queue<Node> q = new LinkedList<>();
+            sb.append(N / 60 + dp[N % 60][0]).append(" ");
+            N %= 60;
 
-            q.add(new Node(0, 0, 0, 0, 0, 0));
-
-            List<Node> answer = new ArrayList<>();
-
-            while(!q.isEmpty()){
-                Node now = q.poll();
-
-                if (now.t == N){
-                    answer.add(now);
-                    continue;
-                }
-
-                int Dh = now.t + 60;
-                int Dt = now.t + 10;
-                int Nt = now.t - 10;
-                int Do = now.t + 1;
-                int No = now.t - 1;
-
-                q.add(new Node(Dh, now.Dh + 1, now.Dt, now.Nt, now.Do, now.No));
-                q.add(new Node(Dt, now.Dh, now.Dt + 1, now.Nt, now.Do, now.No));
-                q.add(new Node(Nt, now.Dh, now.Dt, now.Nt + 1, now.Do, now.No));
-                q.add(new Node(Do, now.Dh, now.Dt, now.Nt, now.Do + 1, now.No));
-                q.add(new Node(No, now.Dh, now.Dt, now.Nt, now.Do, now.No + 1));
+            for (int i = 1; i < 5; i++){
+                sb.append(dp[N][i]).append(" ");
             }
-
-            for (Node ans : answer){
-
-                System.out.println(ans.Dh + " " + ans.Dt + " " + ans.Nt + " " + ans.Do + " " + ans.No);
-            }
-            
+            sb.append("\n");
         }
 
+        bw.write(sb.toString());
         bw.flush();
         br.close();
         bw.close();
+    }
+
+    public static boolean cmp(int[] next, int[] temp){
+        int n = 0, t = 0;
+        String sn ="", st = "";
+        for (int i = 0; i < 5; i++){
+            n += next[i];
+            t += temp[i];
+            sn += String.valueOf(next[i]);
+            st += String.valueOf(temp[i]);
+        }
+        if (n != t) return n > t;
+        else return Integer.parseInt(sn) > Integer.parseInt(st);
     }
 }
