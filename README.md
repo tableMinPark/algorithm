@@ -26,8 +26,8 @@
 | [BOJ - 2559번 수열](https://www.acmicpc.net/problem/2559)                     | Silver 3 | ⭕ |
 | [BOJ - 2477번 참외밭](https://www.acmicpc.net/problem/2477)                   | Silver 5 | ❗ |
 | [BOJ - 2527번 직사각형](https://www.acmicpc.net/problem/2527)                 | Silver 1 | ❗ |
-| [BOJ - 10158번 개미](https://www.acmicpc.net/problem/10158)                   | Silver 4 |          |
-| [BOJ - 2669번 직사각형 네개의 합집합의 면적 구하기](https://www.acmicpc.net/problem/2669)         | Bronze 1 |         |
+| [BOJ - 10158번 개미](https://www.acmicpc.net/problem/10158)                   | Silver 4 | ⭕ |
+| [BOJ - 2669번 직사각형 네개의 합집합의 면적 구하기](https://www.acmicpc.net/problem/2669)         | Bronze 1 | ⭕ |
 | [BOJ - 2635번 수 이어가기](https://www.acmicpc.net/problem/2635)                                  | Silver 5 |          |
 | [BOJ - 1244번 스위치 켜고 끄기](https://www.acmicpc.net/problem/1244)                             | Silver 4 |         |
 | [BOJ - 2628번 종이자르기](https://www.acmicpc.net/problem/2628)                                   | Silver 5 |         |
