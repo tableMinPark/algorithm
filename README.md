@@ -17,21 +17,21 @@
 | [BOJ - 10817번 세 수](https://www.acmicpc.net/problem/10817)                  | Bronze 3 | ⭕ |
 | [BOJ - 9655번 돌 게임](https://www.acmicpc.net/problem/9655)                  | Silver 5 | ⭕ |
 | [BOJ - 3052번 나머지](https://www.acmicpc.net/problem/3052)                   | Bronze 2 | ⭕ |
-| [BOJ - 2941번 크로아티아 알파벳](https://www.acmicpc.net/problem/2941)        | Silver 5 | ❗ |
+| [BOJ - 2941번 크로아티아 알파벳](https://www.acmicpc.net/problem/2941)        | Silver 5 | ❓ |
 | [BOJ - 2309번 일곱 난쟁이](https://www.acmicpc.net/problem/2309)              | Bronze 2 | ⭕ |
 | [BOJ - 2605번 줄 세우기](https://www.acmicpc.net/problem/2605)                | Bronze 2 | ⭕ |
-| [BOJ - 2578번 빙고](https://www.acmicpc.net/problem/2578)                     | Silver 5 | ❗ |
+| [BOJ - 2578번 빙고](https://www.acmicpc.net/problem/2578)                     | Silver 5 | ❓ |
 | [BOJ - 2564번 경비원](https://www.acmicpc.net/problem/2564)                   | Silver 1 | ⭕ |
 | [BOJ - 2491번 수열](https://www.acmicpc.net/problem/2491)                     | Silver 3 | ⭕ |
 | [BOJ - 2559번 수열](https://www.acmicpc.net/problem/2559)                     | Silver 3 | ⭕ |
-| [BOJ - 2477번 참외밭](https://www.acmicpc.net/problem/2477)                   | Silver 5 | ❗ |
-| [BOJ - 2527번 직사각형](https://www.acmicpc.net/problem/2527)                 | Silver 1 | ❗ |
+| [BOJ - 2477번 참외밭](https://www.acmicpc.net/problem/2477)                   | Silver 5 | ❓ |
+| [BOJ - 2527번 직사각형](https://www.acmicpc.net/problem/2527)                 | Silver 1 | ❓ |
 | [BOJ - 10158번 개미](https://www.acmicpc.net/problem/10158)                   | Silver 4 | ⭕ |
 | [BOJ - 2669번 직사각형 네개의 합집합의 면적 구하기](https://www.acmicpc.net/problem/2669)         | Bronze 1 | ⭕ |
-| [BOJ - 2635번 수 이어가기](https://www.acmicpc.net/problem/2635)                                  | Silver 5 |          |
-| [BOJ - 1244번 스위치 켜고 끄기](https://www.acmicpc.net/problem/1244)                             | Silver 4 |         |
-| [BOJ - 2628번 종이자르기](https://www.acmicpc.net/problem/2628)                                   | Silver 5 |         |
-| [BOJ - 2116번 주사위 쌓기](https://www.acmicpc.net/problem/2116)                                  | Gold 5   |          |
+| [BOJ - 2635번 수 이어가기](https://www.acmicpc.net/problem/2635)                                  | Silver 5 | ⭕ |
+| [BOJ - 1244번 스위치 켜고 끄기](https://www.acmicpc.net/problem/1244)                             | Silver 4 | ⭕ |
+| [BOJ - 2628번 종이자르기](https://www.acmicpc.net/problem/2628)                                   | Silver 5 | ⭕ |
+| [BOJ - 2116번 주사위 쌓기](https://www.acmicpc.net/problem/2116)                                  | Gold 5   | ❗ |
 | [BOJ - 2304번 창고 다각형](https://www.acmicpc.net/problem/2304)                                  | Silver 2 |        |
 | [BOJ - 10163번 색종이](https://www.acmicpc.net/problem/10163) 🔅                                                                                                                                                                                                                | Bronze 1 |         |
 | [BOJ - 13300번 방 배정](https://www.acmicpc.net/problem/13300) 🔅                                                                                                                                                                                                               | Bronze 2 |         |
