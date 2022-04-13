@@ -8,8 +8,8 @@
 | 문제                                                                                                                                                                                                                                                                          | 레벨       | 확인       |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|:--------:|
 | [BOJ - 2999번 비밀이메일](https://www.acmicpc.net/problem/2999)               | Bronze 1 | ⭕ |
-| [BOJ - 3985번 롤케이크](https://www.acmicpc.net/problem/                      | Bronze 1 | ⭕ |
-| [BOJ - 11399번 ATM](https://www.acmicpc.net/problem/                          | Silver 3 | ⭕ |
+| [BOJ - 3985번 롤케이크](https://www.acmicpc.net/problem/3985)                 | Bronze 1 | ⭕ |
+| [BOJ - 11399번 ATM](https://www.acmicpc.net/problem/11399)                    | Silver 3 | ⭕ |
 | [BOJ - 8958번 ox퀴즈](https://www.acmicpc.net/problem/8958)                   | Bronze 2 | ⭕ |
 | [BOJ - 2563번 색종이](https://www.acmicpc.net/problem/2563)                   | Silver 5 | ⭕ |
 | [BOJ - 2567번 색종이2](https://www.acmicpc.net/problem/2567)                  | Silver 5 | ⭕ |
@@ -38,10 +38,10 @@
 | [BOJ - 14696번 딱지놀이](https://www.acmicpc.net/problem/14696)                                   | Bronze 1 | ⭕ |
 | [BOJ - 2798번 블랙잭](https://www.acmicpc.net/problem/2798)                                       | Bronze 2 | ⭕ |
 | [BOJ - 1592번 영식이와 친구들](https://www.acmicpc.net/problem/1592)                              | Bronze 2 | ⭕ |
-| [BOJ - 2851번 슈퍼마리오](https://www.acmicpc.net/problem/2851)                                   | Bronze 1 |        |
-| [BOJ - 8320번 직사각형을만드는방법](https://www.acmicpc.net/problem/8320)                         | Bronze 3 |         |
-| [BOJ - 2810번 컵홀더](https://www.acmicpc.net/problem/2810)                                       | Bronze 1 |        |
-| [BOJ - 2292번 벌집](https://www.acmicpc.net/problem/2292)                                         | Bronze 2 |         |
+| [BOJ - 2851번 슈퍼마리오](https://www.acmicpc.net/problem/2851)                                   | Bronze 1 | ⭕ |
+| [BOJ - 8320번 직사각형을만드는방법](https://www.acmicpc.net/problem/8320)                         | Bronze 3 | ❗ |
+| [BOJ - 2810번 컵홀더](https://www.acmicpc.net/problem/2810)                                       | Bronze 1 | ⭕ |
+| [BOJ - 2292번 벌집](https://www.acmicpc.net/problem/2292)                                         | Bronze 2 | ⭕ |
 | [SWEA - 4615번 재미있는 오셀로 게임](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQmA4uK8ygDFAXj)                                                                                                                                                   | D3       |          |
 | [SWEA - 1220번 Magnetic](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14hwZqABsCFAYD&categoryId=AV14hwZqABsCFAYD&categoryType=CODE&problemTitle=1220&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)      | D3       |    |
 | [SWEA - 1209번 Sum](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13_BWKACUCFAYh&categoryId=AV13_BWKACUCFAYh&categoryType=CODE&problemTitle=1209&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)           | D3       |        |
