@@ -20,7 +20,7 @@
 | [BOJ - 2941번 크로아티아 알파벳](https://www.acmicpc.net/problem/2941)        | Silver 5 | ❓ |
 | [BOJ - 2309번 일곱 난쟁이](https://www.acmicpc.net/problem/2309)              | Bronze 2 | ⭕ |
 | [BOJ - 2605번 줄 세우기](https://www.acmicpc.net/problem/2605)                | Bronze 2 | ⭕ |
-| [BOJ - 2578번 빙고](https://www.acmicpc.net/problem/2578)                     | Silver 5 | ❓ |
+| [BOJ - 2578번 빙고](https://www.acmicpc.net/problem/2578)                     | Silver 5 | ⭕ |
 | [BOJ - 2564번 경비원](https://www.acmicpc.net/problem/2564)                   | Silver 1 | ⭕ |
 | [BOJ - 2491번 수열](https://www.acmicpc.net/problem/2491)                     | Silver 3 | ⭕ |
 | [BOJ - 2559번 수열](https://www.acmicpc.net/problem/2559)                     | Silver 3 | ⭕ |
@@ -53,8 +53,8 @@
 | [SWEA - 1948번 날짜계산기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PnnU6AOsDFAUq&categoryId=AV5PnnU6AOsDFAUq&categoryType=CODE&problemTitle=1948&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)         | D2       | ⭕ |
 | [SWEA - 1966번 숫자를 정렬하자](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PrmyKAWEDFAUq&categoryId=AV5PrmyKAWEDFAUq&categoryType=CODE&problemTitle=1966&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)      | D2       | ⭕ |
 | [SWEA - 1493번 수의 새로운 연산](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV2b-QGqADMBBASw&categoryId=AV2b-QGqADMBBASw&categoryType=CODE&problemTitle=1493&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)     | D3       | ❗ |
-| [SWEA - 5356번 의석이 세로로 말해요](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVWgkP6sQ0DFAUO&categoryId=AWVWgkP6sQ0DFAUO&categoryType=CODE&problemTitle=5356&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)   | D3       |         |
-| [SWEA - 7964번 부먹왕궁의 차원관문](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWuSgKpqmooDFASy&categoryId=AWuSgKpqmooDFASy&categoryType=CODE&problemTitle=7964&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)    | D3       |    |
+| [SWEA - 5356번 의석이 세로로 말해요](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVWgkP6sQ0DFAUO&categoryId=AWVWgkP6sQ0DFAUO&categoryType=CODE&problemTitle=5356&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)   | D3       | ⭕ |
+| [SWEA - 7964번 부먹왕궁의 차원관문](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWuSgKpqmooDFASy&categoryId=AWuSgKpqmooDFASy&categoryType=CODE&problemTitle=7964&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)    | D3       | ⭕ |
 | [SWEA - 4789번 성공적인 공연기획](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWS2dSgKA8MDFAVT&categoryId=AWS2dSgKA8MDFAVT&categoryType=CODE&problemTitle=4789&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)     | D3       |      |
 | [SWEA - 4698번 테네스의 특별한 소수](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWRuoqCKkE0DFAXt&categoryId=AWRuoqCKkE0DFAXt&categoryType=CODE&problemTitle=4698&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)   | D3       |         |
 | [SWEA - 6485번 삼성시의 버스 노선](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWczm7QaACgDFAWn&categoryId=AWczm7QaACgDFAWn&categoryType=CODE&problemTitle=6485&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)    | D3       |         |
