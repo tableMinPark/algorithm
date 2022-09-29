@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class swea_4008_tableMinPark {
+public class swea_4008 {
 
     static int N, T, max, min;
     static int[] nums;

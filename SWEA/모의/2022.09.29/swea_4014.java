@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class swea_4014_tableMinPark {
+public class swea_4014 {
 
     static int T, N, X, answer;
     static int[][] rowMap, colMap;
