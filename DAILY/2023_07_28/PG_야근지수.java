@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_야근지수 {
 // 정렬을 이용한 풀이 (효율성 X)
 //     public long solution(int n, int[] works) {
 //         long answer = 0;

@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-class Solution {
+class PG_최고의집합 {
     public int[] solution(int n, int s) {
         int[] answer = {-1};
 

@@ -1,6 +1,6 @@
 // DP
 
-class Solution {
+class PG_정수삼각형 {
     public int solution(int[][] triangle) {
         int answer = 0;
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_등굣길 {
 
     static final int MOD = 1_000_000_007;
 
