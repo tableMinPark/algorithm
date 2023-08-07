@@ -38,7 +38,7 @@ public class BJ_1753 {
         dist = new int[V + 1];
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[K] = 0;
-        solve();
+        dijkstra();
 
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= V; i++) {
@@ -49,7 +49,7 @@ public class BJ_1753 {
         br.close();
     }
 
-    static void solve() {
+    static void dijkstra() {
         PriorityQueue<Node> q = new PriorityQueue<>((n1, n2) -> n1.w - n2.w);
         boolean[] v = new boolean[V + 1];
         q.add(new Node(K, 0));
@@ -57,6 +57,9 @@ public class BJ_1753 {
         while(!q.isEmpty()) {
             Node now = q.poll();
 
+            // 정점 기준으로 갱신은 하지만 해당 정점으로 다시 방문해서 두 번이상 갱신하지 않는다.
+            // 갱신은 다른 정점에서 갱신할 때만 씀
+            // 갱신은 무조건 한번 씩만
             if (v[now.n]) {
                 continue;
             }
