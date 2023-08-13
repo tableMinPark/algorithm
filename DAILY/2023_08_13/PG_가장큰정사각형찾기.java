@@ -1,4 +1,4 @@
-class 가장큰정사각형찾기 {
+class PG_가장큰정사각형찾기 {
     static int N, M;
 
     public int solution(int [][]board) {
